@@ -1,0 +1,19 @@
+<!-- <div class="container w-25"> -->
+    <table class="table table-bordered w-25">
+        <thead class="thead light">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Active</th>
+            </tr>
+        </thead>
+            <tbody>
+                <tr *ngFor="let ui of service.list">
+                    <td>{{ui.id}}</td>
+                    <td>{{ui.name}}</td>
+                    <td><input type="checkbox" [checked]="ui.active" (click)="ActiveChange(ui)"/></td>
+                </tr>
+            </tbody>
+    </table>
+    <button  mat-button class="btn btn-secondary" (click)="TotalPopup()">Total</button>
+<!-- </div> -->
